@@ -35,7 +35,7 @@ class Newsletter
 
     public function validateDeviceId($device_id)
     {
-        if (!isset($device_id) || empty($device_id)) {
+        if (empty($device_id)) {
             return false;
         }
 
